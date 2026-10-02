@@ -1,4 +1,4 @@
-# ESP32 PS4 Snake
+# ESP32 Snake Game and playing with PS4 controller
 
 A simple Snake game running on an ESP32 and controlled using a PlayStation 4 DualShock 4 controller over Bluetooth.
 
