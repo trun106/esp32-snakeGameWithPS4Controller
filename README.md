@@ -19,7 +19,7 @@ The game is displayed in the macOS terminal.
 - OPTIONS button to pause/resume
 - R2 speed boost
 - PS4 face buttons and D-pad for movement
-- Fixed Serial Monitor screen using ANSI escape sequences
+- Fixed Serial Monitor screen using ANSI escape sequences (we cannot use the serial monitor of the arduinoIDE, must use the terminal)
 
 ---
 
