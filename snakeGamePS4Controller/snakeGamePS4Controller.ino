@@ -139,7 +139,7 @@ void moveCursorHome() {
 
 //UI
 void drawGame() {
-  moveCursorHome();
+  clearScreen();
 
   Serial.println("===== ESP32 SNAKE =====");
 
@@ -201,7 +201,7 @@ void drawGame() {
 
 //pause screen
 void drawPauseScreen() {
-  moveCursorHome();
+  clearScreen();
 
   Serial.println("===== ESP32 SNAKE =====");
 
@@ -221,7 +221,7 @@ void drawPauseScreen() {
 
 //game over screen
 void drawGameOver() {
-  moveCursorHome();
+  clearScreen();
 
   Serial.println("===== ESP32 SNAKE =====");
 
@@ -458,7 +458,7 @@ void loop() {
     else {
       moveInterval = NORMAL_MOVE_INTERVAL;
     }
-    // Move snake
+    //moving
     if (currentTime - lastMoveTime >= moveInterval) {
       lastMoveTime = currentTime;
       moveSnake();
@@ -467,6 +467,5 @@ void loop() {
       }
     }
   }
-  // Small delay
   delay(10);
 }
